@@ -1,0 +1,9 @@
+{
+
+  "top_dilation_exp": 12,
+  "n_blocks": 5,
+
+  "residual_channels": 64,
+  "skip_channels": 256
+
+}
