@@ -7,11 +7,11 @@ top_dilation_exp, n_blocks, residual_channels, skips_channels = load_params()
 field = (2 ** (top_dilation_exp + 1) - 1) * n_blocks + 1
 
 # define training parameters #
-mini_batch_size = int(field * 2)
 n_epochs = 1
-
 load_from_weights = False
 
+
+mini_batch_size = int(field * 2)
 
 # define training step functions
 @tf.function

@@ -37,9 +37,12 @@ model.load_weights(os.path.join('Saved_Models', 'Best_Model', 'best_model')).exp
 # generate samples #
 
 num_generate = 10
+val_file = 0
 start, end = 80000, 130000
 seed_window = slice(start, end, 1)
-seed = X_val[0][:, seed_window]
+
+
+seed = X_val[val_file][:, seed_window]
 
 generate_output = model.generate(seed, num_generate)
 
